@@ -1,352 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="styles/slick.css">
-	<link rel="stylesheet" href="styles/reset.css">
-	<link rel="stylesheet" href="styles/style.css">
-	
-  <title>Интернет-магазин</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat:400,700|Montserrat:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="fancybox-2.1.7/lib/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="fancybox-2.1.7/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
+  <script type="text/javascript" src="fancybox-2.1.7/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <link rel="stylesheet" type="text/css" href="fancybox-2.1.7/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+  <link rel="stylesheet" type="text/css" href="fancybox-2.1.7/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+  <script type="text/javascript" src="fancybox-2.1.7/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <link rel="stylesheet" type="text/css" href="fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+  <script type="text/javascript" src="fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+  <script type="text/javascript" src="fancybox-2.1.7/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('.fancybox').fancybox();
+      });
+  </script>
+  <title>Вязанные вещи на заказ</title>
 </head>
 <body>
-	
-	<header class="header">
-		<div class="container">
-			<div class="header-top">
-				<div class="logo"><a href="#">Aditii</a></div>
-				<div class="bascket">
-					<a href="#" class="bascket__image"><img src="images/bascket.png"></a>
-					<a href="#" class="bascket__price">$300</a>				
-				</div>
-			</div>
-		</div>
-		<nav class="header__menu">
-			<div class="container">
-				<ul class="menu flex">
-					<li class="menu__item">
-            <a class="menu__link" href="#">home</a>
-          </li>
-					<li class="menu__item">
-            <a class="menu__link" href="#">sale</a>
-          </li>
-					<li class="menu__item">
-            <a class="menu__link" href="#">handbags</a>
-          </li>
-					<li class="menu__item">
-            <a class="menu__link" href="#">wallets</a>
-          </li>
-					<li class="menu__item">
-            <a class="menu__link" href="#">accessories</a>
-          </li>
-					<li class="menu__item">
-            <a class="menu__link" href="#">mens store</a>
-          </li>
-					<li class="menu__item">
-            <a class="menu__link" href="#">shoes</a>
-          </li>
-					<li class="menu__item">
-            <a class="menu__link" href="#">vintage</a>
-          </li>
-					<li class="menu__item">
-            <a class="menu__link" href="#">servises</a>
-          </li>
-					<li class="menu__item">
-            <a class="menu__link" href="#">contact us</a>
-          </li>
-				</ul>
-			</div> <!-- .container -->
-		</nav>
-	</header>
-
-    <!-- .slider -->
-
-	<div class="slider">
-		<div class="container">
-      <div class="slider__wrapper">
-        <div class="slider__item">
-          <div class="slider__img">
-              <img src="images/t-shirt.png" alt="t-shirt">
+  <div class="intro">
+    <header class="wrapper">    
+      <div class="main_header">
+        <div class="main_header__top">
+          <div class="logo">
+            <a target="_blank" href="https://https://www.instagram.com/dasha_popovskaya/">Даша Попова</a>
           </div>
-          <div class="slider__text">
-              <h2 class="slider__title">
-                  Cowhide Standard Crew
-              </h2>
-              <p class="slider__content">
-                  White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.						
-              </p>
-              <a href="#" class="slider__btn">shop now</a>
-          </div>
-       </div>
-       <div class="slider__item">
-          <div class="slider__img">
-              <img src="images/t-shirt.png" alt="t-shirt">
-          </div>
-          <div class="slider__text">
-              <h2 class="slider__title">
-                  Cowhide Standard Crew
-              </h2>
-              <p class="slider__content">
-                  White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.						
-              </p>
-              <a href="#" class="slider__btn">shop now</a>
-          </div>
-       </div>
-        <div class="slider__marker-wrap">
-          <a href="#" class="slider__marker"></a>
-          <a href="#" class="slider__marker"></a>
-          <a href="#" class="slider__marker"></a>
-          <a href="#" class="slider__marker active"></a>
-          <a href="#" class="slider__marker"></a>
-        </div>
-  		</div> <!-- .slider__wrapper -->
-    </div> <!-- .container -->
-	</div> <!-- .container -->
-
-  <div class="banner">
-     <div class="banner__wrapper">
-      <div class="banner__item">
-        <div class="banner__img">
-          <img src="images/banner1.png" class="img">
-        </div>
-        <div class="banner__content">
-          <h3 class="banner__text">
-            branded shoes
-          </h3>
-          <a href="#" class="banner__btn">
-            shop
-          </a>
+          <nav class="top_nav">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Мои работы</a></li>
+              <li><a href="#">Отзывы заказчиков</a></li>
+              <li><a href="#">Сколько стоит?</a></li>
+              <li><a href="#">Сделать заказ</a></li> 
+            </ul>
+          </nav>
+        </div>      
+      </div>
+    </header>
+    <section class="intro__section">
+      <div class="wrapper">
+        <div class="slogan">
+          <h1>"Дарите любимым тепло и нежность... А я помогу вам не замёрзнуть!"</h1>
+          <p>Привет! Меня зовут Даша Попова и я вяжу на заказ красивейшую одежду. Буду рада связать тёплый костюмчик для Вашего малыша, удобную шапку для мужчины или милую кофточку для девушки. Количество вариантов моделей одежды, материалов и цветовой гаммы очень велико, и я помогу Вам с выбором.</p>      
         </div>
       </div>
-      <div class="banner__item">
-        <div class="banner__img">
-          <img src="images/banner2.png" class="img">
-        </div>
-        <div class="banner__content">
-          <h3 class="banner__text">
-            branded tshirts
-          </h3>
-          <a href="#" class="banner__btn">
-            shop
-          </a>
-        </div>
-      </div>
-      <div class="banner__item">
-        <div class="banner__img">
-          <img src="images/banner3.png" class="img">
-        </div>
-        <div class="banner__content">
-          <h3 class="banner__text">
-            branded shoes
-          </h3>
-          <a href="#" class="banner__btn">
-            shop
-          </a>
-        </div>
-      </div>
-      <div class="banner__item">
-        <div class="banner__img">
-          <img src="images/banner1.png" class="img">
-        </div>
-        <div class="banner__content">
-          <h3 class="banner__text">
-            branded shoes
-          </h3>
-          <a href="#" class="banner__btn">
-            shop
-          </a>
-        </div>
-      </div>
-      <div class="banner__item">
-        <div class="banner__img">
-          <img src="images/banner2.png" class="img">
-        </div>
-        <div class="banner__content">
-          <h3 class="banner__text">
-            branded tshirts
-          </h3>
-          <a href="#" class="banner__btn">
-            shop
-          </a>
-        </div>
-      </div>
-      <div class="banner__item">
-        <div class="banner__img">
-          <img src="images/banner3.png" class="img">
-        </div>
-        <div class="banner__content">
-          <h3 class="banner__text">
-            branded shoes
-          </h3>
-          <a href="#" class="banner__btn">
-            shop
-          </a>
-        </div>
-      </div>
-     </div>
+    </section>
   </div>
-  <section class="products">
-  	<div class="products__inner">
-  		<header class="products__header">
-			<div class="container">
-				<h3 class="products__title">
-					featured products
-				</h3>
-			</div>
-  		</header>
-  		<div class="container">
-  			<div class="products__content flex">
-  				<div class="products__item">
-  					<img src="images/product1.png" alt="Product1" class="img products__item_img">
-  					<h4 class="products__item_title">
-  						branded shoe
-  					</h4>
-  					<a href="#" class="products__item_price">$300</a>
-  					<a href="#" class="products__item_btn">buy now</a>
-  				</div>
-  				<div class="products__item">
-  					<img src="images/product2.png" alt="Product2" class="img products__item_img">
-  					<h4 class="products__item_title">
-  						branded shoe
-  					</h4>
-  					<a href="#" class="products__item_price">$300</a>
-  					<a href="#" class="products__item_btn">buy now</a>
-  				</div>
-  				<div class="products__item">
-  					<img src="images/product3.png" alt="Product3" class="img products__item_img">
-  					<h4 class="products__item_title">
-  						branded shoe
-  					</h4>
-  					<a href="#" class="products__item_price">$300</a>
-  					<a href="#" class="products__item_btn">buy now</a>
-  				</div>
-  				<div class="products__item">
-  					<img src="images/product4.png" alt="Product4" class="img products__item_img">
-  					<h4 class="products__item_title">
-  						branded shoe
-  					</h4>
-  					<a href="#" class="products__item_price">$300</a>
-  					<a href="#" class="products__item_btn">buy now</a>
-  				</div>
-  				<div class="products__item">
-  					<img src="images/product5.png" alt="Product5" class="img products__item_img">
-  					<h4 class="products__item_title">
-  						branded shoe
-  					</h4>
-  					<a href="#" class="products__item_price">$300</a>
-  					<a href="#" class="products__item_btn">buy now</a>
-  				</div>
-  				<div class="products__item">
-  					<img src="images/product6.png" alt="Product6" class="img products__item_img">
-  					<h4 class="products__item_title">
-  						branded shoe
-  					</h4>
-  					<a href="#" class="products__item_price">$300</a>
-  					<a href="#" class="products__item_btn">buy now</a>
-  				</div>
-  			</div>
-  		</div>  		
-  	</div>
-  </section>
-  <footer class="footer">
-  	<div class="footer__inner">
-  		<div class="container">
-  			<div class="footer__wrapper">
-				<div class="footer__item">
-					<h4 class="footer__item_title">
-						featured sale
-					</h4>
-					<a href="#" class="footer__item_link">
-						Alexis Hudson</a>
-					<a href="#" class="footer__item_link">
-						American Apparel</a>
-					<a href="#" class="footer__item_link">
-						Big Buddha</a>
-					<a href="#" class="footer__item_link">
-						Chanel</a>
-					<a href="#" class="footer__item_link">
-						Christian Audigier</a>
-					<a href="#" class="footer__item_link">
-						Coach</a>
-					<a href="#" class="footer__item_link">
-						Cole Haan</a>
-					<a href="#" class="footer__item_link">
-						Ben Sherman</a>
-				</div>
-				<div class="footer__item">
-					<h4 class="footer__item_title">
-						mens store
-					</h4>
-					<a href="#" class="footer__item_link">
-						Alexis Hudson</a>
-					<a href="#" class="footer__item_link">
-						American Apparel</a>
-					<a href="#" class="footer__item_link">
-						Big Buddha</a>
-					<a href="#" class="footer__item_link">
-						Chanel</a>
-					<a href="#" class="footer__item_link">
-						Christian Audigier</a>
-					<a href="#" class="footer__item_link">
-						Coach</a>
-					<a href="#" class="footer__item_link">
-						Cole Haan</a>
-					<a href="#" class="footer__item_link">
-						Ben Sherman</a>
-				</div>
-				<div class="footer__item">
-					<h4 class="footer__item_title">
-						women store
-					</h4>
-					<a href="#" class="footer__item_link">
-						Alexis Hudson</a>
-					<a href="#" class="footer__item_link">
-						American Apparel</a>
-					<a href="#" class="footer__item_link">
-						Big Buddha</a>
-					<a href="#" class="footer__item_link">
-						Chanel</a>
-					<a href="#" class="footer__item_link">
-						Christian Audigier</a>
-					<a href="#" class="footer__item_link">
-						Coach</a>
-					<a href="#" class="footer__item_link">
-						Cole Haan</a>
-					<a href="#" class="footer__item_link">
-						Ben Sherman</a>
-				</div>
-				<div class="footer__item">
-					<h4 class="footer__item_title">
-						quick links
-					</h4>
-					<a href="#" class="footer__item_link">
-						Alexis Hudson</a>
-					<a href="#" class="footer__item_link">
-						American Apparel</a>
-					<a href="#" class="footer__item_link">
-						Big Buddha</a>
-					<a href="#" class="footer__item_link">
-						Chanel</a>
-					<a href="#" class="footer__item_link">
-						Christian Audigier</a>
-					<a href="#" class="footer__item_link">
-						Coach</a>
-					<a href="#" class="footer__item_link">
-						Cole Haan</a>
-					<a href="#" class="footer__item_link">
-						Ben Sherman</a>
-				</div>
-  			</div>
-  		</div>
-  	</div>
-  	<div class="copyright">
-		Copyright © 2013 Css Author
-	</div>
-  </footer>
-  <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
+  <div class="my_works">
+    <h2>Вот что я вяжу</h2>
+    <div class="wrapper">
+      <div class="my_works__inner">
+        <div class="my_works__item">
+          <div class="my_works__text">
+            <h3>Одежда для детей.</h3>
+            Очень милая, тёплая и мягкая. Комбинезончики, кофточки, шарфики, снуты, манишки, носочки, руковички и многое другое...
+            <h3>Одежда для взрослых.</h3>
+            Согреет в самые лютые морозы и тело и душу, главное выбрать то, что нравится!
+          </div>         
+        </div>
+      </div>
+    </div>
+    <h2 class="galery__title">Галерея</h2>
+      <div class="galery">
+          <div class="wrapper">
+            <div class="galery__inner">
+              <div class="galery__img">
+                <a class="fancybox" href="img/comb1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+                <img src="img/comb1.jpg" alt="Image1" /></a>
+
+                <a class="fancybox" href="img/comb2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+                <img src="img/comb2.jpg" alt="Image3" /></a>
+
+                <a class="fancybox" href="img/comb3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+                <img src="img/comb3.jpg" alt="Image3" /></a>
+
+                <a class="fancybox" href="img/hat.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+                <img src="img/hat.jpg" alt="Image1" /></a>
+
+                <a class="fancybox" href="img/hat2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+                <img src="img/hat2.jpg" alt="Image2" /></a>
+
+                <a class="fancybox" href="img/hat3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+                <img src="img/hat3.jpg" alt="Image3" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>   
 </body>
 </html>
