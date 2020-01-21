@@ -2,6 +2,15 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: #1188dd;
+  position: relative;
+}
+.home_button{
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;  
 }
 .wrapper {
   max-width: 1280px;
@@ -96,49 +105,22 @@ body {
   line-height: 1.2;
 }
 
+.my_works{
+  height: 100vh;
+  background: rgba(33, 136, 221, .9) url(../img/bg_my_works.png) repeat;
+}
+
 .my_works h2{
   margin-top: 40px;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 40px;
   font-weight: 700;
 }
-.my_works__inner{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-}
-.my_works__item{
-  margin: 30px 20px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.my_works__img{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.my_works__text{
-  padding: 20px 30px;
-}
-.my_works__text h3{
-  font-weight: 700;
-  margin-bottom: 20px;
-  font-size: 25px;
-}
-.my_works__text{
-  line-height: 1.2;
+.accordion_inner,
+.galery__inner{
+  width: 100%;
+  padding: 0 30px;
 }
 
 galery__title{
@@ -146,23 +128,31 @@ galery__title{
 }
 
 .galery__img{
+  
   margin-top: 60px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  overflow: hidden;
 }
 
-.galery__img img{
-  margin: 10px;
-  width: 120px;
-  height: auto;
+.galery__img a{
+  display: block;
+  width: 16.6666%;
+  
   border: 2px solid #1188dd;
 }
 
+
+.galery__img a img{
+  width: 100%;
+  
+  
+}
 
 
 
