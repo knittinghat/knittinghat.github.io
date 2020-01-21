@@ -106,7 +106,6 @@ body {
 }
 
 .my_works{
-  height: 100vh;
   background: rgba(33, 136, 221, .9) url(../img/bg_my_works.png) repeat;
 }
 
