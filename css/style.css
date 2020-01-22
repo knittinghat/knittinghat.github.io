@@ -1,14 +1,15 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+	line-height: 1.5;
   color: #1188dd;
   position: relative;
 }
 .home_button{
   display: block;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10px;
+  right: 10px;
   width: 48px;
   height: 48px;  
 }
@@ -37,6 +38,10 @@ body {
   color: #fff;
 }
 
+.galery_header{
+  background: rgba(33, 136, 221, .8);
+}
+
 .main_header__top .logo {
   min-width: 230px;
   font-family: 'Caveat', cursive;
@@ -44,7 +49,7 @@ body {
   font-size: 40px;
   line-height: 70px;
   text-align: center;
-  margin: 10px 30px;
+  margin: 0 30px;
   border-right: 2px #fff;
 }
 
@@ -54,17 +59,23 @@ body {
 }
 
 .main_header__top .top_nav {
-  margin: 10px 30px; 
+  margin: 0 30px; 
 }
 
 .main_header__top .top_nav ul {
-  margin-top: 10px;
+	height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .main_header__top .top_nav ul li{  
-  display: inline-block;
+  
   margin-right: 10px;
-  height: 30px;
 }
 
 .main_header__top .top_nav ul li a{
@@ -105,12 +116,20 @@ body {
   line-height: 1.2;
 }
 
-.my_works{
-  background: rgba(33, 136, 221, .9) url(../img/bg_my_works.png) repeat;
+.content{
+	background: rgba(33, 136, 221, .1) url(../img/bg_my_works.png) repeat;
 }
 
-.my_works h2{
-  margin-top: 40px;
+.section{
+  padding: 20px 0 20px 0;
+  min-height: 100vh;
+}
+
+.my_works{
+	padding-top: 40px;
+}
+
+.section_title{
   margin-bottom: 40px;
   text-align: center;
   font-size: 40px;
@@ -119,6 +138,7 @@ body {
 .accordion_inner,
 .galery__inner{
   width: 100%;
+		height: 70vh;
   padding: 0 30px;
 }
 
@@ -141,17 +161,150 @@ galery__title{
 
 .galery__img a{
   display: block;
-  width: 16.6666%;
-  
+  width: 16.6666%;  
   border: 2px solid #1188dd;
 }
 
 
 .galery__img a img{
   width: 100%;
-  
-  
 }
+
+/*Feedback section*/
+
+.feedback_inner{
+	max-height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.feedback_item{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 47%;
+	max-height: 200px;
+	margin: 10px;
+	}
+
+.feedback_item a{
+	height: 100%;
+	display: block;
+	text-decoration: none;
+	padding-left: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.feedback_item a h4{
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 35px;
+	color: #1188dd;
+}
+.feedback_item a p{
+	overflow: hidden;
+	line-height: 1.2;
+	color: #1188dd;
+	text-overflow: ellipsis;
+}
+.feedback_item img{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+}
+.feedback_form_container{
+	margin: 0 auto;
+}
+.feedback_form{
+	width: 600px;
+	margin: 0 auto;
+}
+.feedback_form h5{
+	font-size: 25px;
+	font-weight: 700;
+}
+.feedback_form_inner p{
+	display: block;
+	margin-right: 15px;
+}
+.feedback_text, 
+.feedback_name{
+	font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.feedback_form_inner .feedback_text,
+.feedback_name{
+	width: 100%;
+	margin-top: 15px;
+	padding: 0;
+	border-radius: 5px;
+	border: 2px solid #1188dd;
+}
+.feedback_submit{
+	display: block;
+	width: 150px;
+	height: 50px;
+	align-self: flex-end;
+	font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+	color: #1188dd;
+	border-radius: 5px;
+	border: 2px solid #1188dd;
+	background-color: rgba(255, 255, 255, .8);
+	cursor: pointer;
+	transition: all ease .3s;
+}
+.feedback_submit:hover{
+	color: #fff;
+  background-color: #1188dd;
+  transition: all ease .3s;
+}
+
+/* Price */
+
+.price_item{
+	width: 30%;
+	padding: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.price_photo img{
+	width: 200px;
+	height: 200px;
+}
+
+.price_list{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
 
 
 

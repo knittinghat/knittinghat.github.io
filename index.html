@@ -27,8 +27,8 @@
     <img src="img/home_button_icon.svg" alt="home">
   </a>
   <div class="intro" id="main_page">
-    <header class="wrapper">    
-      <div class="main_header">
+    <div class="wrapper">    
+      <header class="main_header">
         <div class="main_header__top">
           <div class="logo">
             <a target="_blank" href="https://https://www.instagram.com/dasha_popovskaya/">Даша Попова</a>
@@ -36,14 +36,14 @@
           <nav class="top_nav">
             <ul>
               <li><a href="#my_works">Мои работы</a></li>
-              <li><a href="#">Отзывы заказчиков</a></li>
-              <li><a href="#">Сколько стоит?</a></li>
+              <li><a href="#feedback">Отзывы заказчиков</a></li>
+              <li><a href="#price">Сколько стоит?</a></li>
               <li><a href="#">Сделать заказ</a></li> 
             </ul>
           </nav>
-        </div>      
-      </div>
-    </header>
+        </div><!-- main_header__top -->  
+      </header><!-- main_header -->
+    </div><!-- wrapper -->
     <section class="intro__section">
       <div class="wrapper">
         <div class="slogan">
@@ -54,83 +54,204 @@
     </section>
   </div>
   
-  <div class="my_works" id="my_works">
-    <h2>Вот что я вяжу</h2>
-    <div class="wrapper">
-      <div class="accordion_inner">
-        <ul class="accordion">
+  <main class="content">
+   	<section class="my_works section" id="my_works">
+			<h2 class="section_title">Вот что я вяжу</h2>
+			<div class="wrapper">
 
-          <li class="item1">
-            <a href="#">
-              <h4>Снуды, шарфы</h4>
-              <p>Lorem ipsum dolor sit amet</p>
-            </a>     
-          </li>
+				<div class="accordion_inner">
+					<ul class="accordion">
 
-          <li class="item2">
-            <a href="#">
-              <h4>Варежки</h4>
-              <p>Odio vitae sint illum mollitia ratione deleniti</p>
-            </a>     
-          </li>
+						<li class="item1">
+							<a href="galery.html">
+								<h4>Снуты, шарфы</h4>
+								<p>Lorem ipsum dolor sit amet</p>
+							</a>     
+						</li>
 
-          <li class="item3">
-            <a href="#">
-              <h4>Шапки</h4>
-              <p>illo nostrum velit, sequi ea esse enim optio eius provident.</p>
-            </a>     
-          </li>
+						<li class="item2">
+							<a href="#">
+								<h4>Варежки</h4>
+								<p>Odio vitae sint illum mollitia ratione deleniti</p>
+							</a>     
+						</li>
 
-          <li class="item4">
-            <a href="#">
-              <h4>Комплекты</h4>
-              <p>sequi ea esse enim optio eius provident voluptate </p>
-            </a>     
-          </li>
+						<li class="item3">
+							<a href="#">
+								<h4>Шапки</h4>
+								<p>illo nostrum velit, sequi ea esse enim optio eius provident.</p>
+							</a>     
+						</li>
 
-          <li class="item5">
-            <a href="#">
-              <h4>Детские вещи</h4>
-              <p>voluptate voluptatum harum officia repellat.</p>
-            </a>     
-          </li>
+						<li class="item4">
+							<a href="#">
+								<h4>Комплекты</h4>
+								<p>sequi ea esse enim optio eius provident voluptate </p>
+							</a>     
+						</li>
 
-          <li class="item6">
-            <a href="#">
-              <h4>Аксессуары</h4>
-              <p>ratione deleniti, illo nostrum velit, sequi ea esse enim provident</p>
-            </a>     
-          </li>
+						<li class="item5">
+							<a href="#">
+								<h4>Детские вещи</h4>
+								<p>voluptate voluptatum harum officia repellat.</p>
+							</a>     
+						</li>
 
-        </ul>
-      </div> <!-- accordion inner -->
-    <h2 class="galery__title">Галерея</h2>
-      <div class="galery">      
-        <div class="galery__inner">
-          <div class="galery__img">
-           
-            <a class="fancybox" href="img/comb1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
-            <img src="img/comb1.jpg" alt="Image1" /></a>
+						<li class="item6">
+							<a href="#">
+								<h4>Аксессуары</h4>
+								<p>ratione deleniti, illo nostrum velit, sequi ea esse enim provident</p>
+							</a>     
+						</li>
 
-            <a class="fancybox" href="img/comb2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
-            <img src="img/comb2.jpg" alt="Image3" /></a>
-
-            <a class="fancybox" href="img/comb3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
-            <img src="img/comb3.jpg" alt="Image3" /></a>
-
-            <a class="fancybox" href="img/hat.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
-            <img src="img/hat.jpg" alt="Image1" /></a>
-
-            <a class="fancybox" href="img/hat2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
-            <img src="img/hat2.jpg" alt="Image2" /></a>
-
-            <a class="fancybox" href="img/hat3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
-            <img src="img/hat3.jpg" alt="Image3" /></a>
-            
-          </div><!-- galery_img -->
-        </div><!-- galery_inner -->           
-      </div><!-- galery -->
-    </div> <!-- wrapper -->
-  </div> <!-- my_works --> 
+					</ul>
+				</div> <!-- .accordion_inner -->
+			</div> <!-- .wrapper -->
+    </section><!-- .my_works -->
+  
+		<section class="feedback section" id="feedback">
+			<h2 class="section_title">Отзывы заказчиков</h2>
+			<div class="wrapper">
+				<div class="feedback_inner">
+				
+					<div class="feedback_item">
+						<img src="https://via.placeholder.com/150" alt="Photo" class="feedback_photo">
+						<div class="feedback_text">
+							<a href="#feedback">
+								<h4>Танюша Морозова</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam non, enim rerum, adipisci laboriosam consequatur natus debitis aut reiciendis officiis tempora aspernatur modi unde ullam. Quae dolore ipsam sit magni!</p>
+							</a>
+						</div><!-- .feedback_text -->
+					</div><!-- feedback_item -->
+					
+					<div class="feedback_item">
+						<img src="https://via.placeholder.com/150" alt="Photo" class="feedback_photo">
+						<div class="feedback_text">
+							<a href="#feedback">
+								<h4>Юлия Саликова</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam non, enim rerum, adipisci laboriosam consequatur natus debitis aut reiciendis officiis tempora aspernatur modi unde ullam. Quae dolore ipsam sit magni! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, nesciunt optio, exercitationem consectetur suscipit perspiciatis? Quasi aliquid impedit ex maxime! In itaque vitae aliquam esse sit praesentium consequuntur sequi, maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veniam nulla eos excepturi blanditiis nobis molestiae ipsam qui autem veritatis fugiat, voluptatum earum facilis assumenda nam illum quod, aspernatur voluptatem. </p>
+							</a>
+						</div><!-- .feedback_text -->
+					</div><!-- feedback_item -->
+					
+					<div class="feedback_item">
+						<img src="https://via.placeholder.com/150" alt="Photo" class="feedback_photo">
+						<div class="feedback_text">
+							<a href="#feedback">
+								<h4>Полина</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam non, enim rerum, adipisci laboriosam consequatur natus debitis aut reiciendis officiis tempora aspernatur modi unde ullam. Quae dolore ipsam sit magni!</p>
+							</a>
+						</div><!-- .feedback_text -->
+					</div><!-- feedback_item -->
+					
+					<div class="feedback_item">
+						<img src="https://via.placeholder.com/150" alt="Photo" class="feedback_photo">
+						<div class="feedback_text">
+							<a href="#feedback">
+								<h4>Аля Сажина</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam non, enim rerum, adipisci laboriosam consequatur natus debitis aut reiciendis officiis tempora aspernatur modi unde ullam. Quae dolore ipsam sit magni!</p>
+							</a>
+						</div><!-- .feedback_text -->
+					</div><!-- feedback_item -->			
+					
+				</div><!-- feedback_inner -->
+				
+					<div class="feedback_form_container">
+						<form action="" class="feedback_form">
+						<h5>Также вы можете оставить свой отзыв!</h5>
+						 <div class="feedback_form_inner">
+							 <p>Представьтесь, пожалуйста:</p>
+							 <input type="text" class="feedback_name" placeholder="Введите ваше имя">
+							 <textarea name="feedback_text" id="" cols="60" rows="8" class="feedback_text" placeholder="Введите ваш комментарий"></textarea>
+							 <input type="submit" class="feedback_submit">
+						 </div>
+					</form>
+				</div>
+			</div><!-- .wrapper -->
+		</section><!-- .feedback -->
+		<section class="price section" id="price">
+			<h2 class="section_title">Сколько стоит?</h2>
+			<div class="wrapper">
+				<div class="price_container">
+					<p>Стоимость изделий очень различается в зависимости от выбранного материала, размера, сложности модели и других показателей. Ориентировочные цены приведены ниже:</p>
+					<div class="price_list">
+					
+						<div class="price_item">
+							<div class="price_photo">
+								<img src="img/hat2.jpg" alt="">
+							</div>
+							<div class="price_text">
+								Однотонные шапки
+							</div>
+							<div class="price_price">
+								От 1500 рублей.
+							</div>
+						</div><!-- .price_item -->
+						
+						<div class="price_item">
+							<div class="price_photo">
+								<img src="img/hat1.jpg" alt="">
+							</div>
+							<div class="price_text">
+								Шапки с узором
+							</div>
+							<div class="price_price">
+								От 3000 рублей.
+							</div>
+						</div><!-- .price_item -->
+						
+						<div class="price_item">
+							<div class="price_photo">
+								<img src="img/switer.jpg" alt="">
+							</div>
+							<div class="price_text">
+								Однотонные свитера
+							</div>
+							<div class="price_price">
+								От 8000 рублей.
+							</div>
+						</div><!-- .price_item -->
+						
+						<div class="price_item">
+							<div class="price_photo">
+								<img src="img/switer2.jpg" alt="">
+							</div>
+							<div class="price_text">
+								Свитера с узором
+							</div>
+							<div class="price_price">
+								От 15000 рублей.
+							</div>
+						</div><!-- .price_item -->
+						
+						<div class="price_item">
+							<div class="price_photo">
+								<img src="img/snud.jpg" alt="">
+							</div>
+							<div class="price_text">
+								Шарф, снуд
+							</div>
+							<div class="price_price">
+								От 2000 рублей.
+							</div>
+						</div><!-- .price_item -->
+						
+						<div class="price_item">
+							<div class="price_photo">
+								<img src="img/children.jpg" alt="">
+							</div>
+							<div class="price_text">
+								Детские вещи
+							</div>
+							<div class="price_price">
+								От 2000 рублей.
+							</div>
+						</div><!-- .price_item -->
+												
+					</div>
+				</div>
+			</div>
+		</section>
+  </main><!-- .content -->
 </body>
 </html>

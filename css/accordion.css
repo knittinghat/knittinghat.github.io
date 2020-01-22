@@ -1,91 +1,89 @@
-    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-    .accordion *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      color: #fff;
-      font-family: 'Montserrat', sans-serif;
-    }
-    .accordion{
-      width: 100%;
-      height: 250px;
-      list-style: none;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      overflow: hidden;
-      flex-wrap: nowrap;
-    }
-    .accordion li{
-      display: block;
-      width: 16.6666%;
-      transition: all linear .3s;
-      overflow: hidden;      
-      position: relative;
-    }
-    .accordion:hover li{
-      width: 8%;
-    }
-    .accordion li:hover{
-      width: 60%;
-    }
-    
-    .accordion li:focus{
-      outline: none;
-    }    
-    .accordion li a{
-      text-decoration: none;
-      display: block;
-      height: 100%;
-      padding: 20px;
-      overflow: hidden;
-      opacity: 0;
-      transition: all linear .3s;
-    }
-    .accordion li:hover a{
-      background-color: rgba(0, 0, 0, .3);
-      opacity: 1;
-      transition: all linear .3s;
-    }
-    .accordion li a h4{
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 30px;
-      position: absolute;
-      left: 10px;
-      bottom: 80px;
-    }
-    .accordion li a p{
-      font-size: 20px;
-      position: absolute;
-      left: 10px;
-      bottom: 20px;
-    }
-    .item1{
-      background: url(../img/a-bg1.jpg)  center center no-repeat;
-      background-size: cover;
-    }
-    .item2{
-      background: url(../img/a-bg2.jpg)  center center no-repeat;
-      background-size: cover;
-    }
-    .item3{
-      background: url(../img/a-bg3.jpg)  center center no-repeat;
-      background-size: cover;
-    }
-    .item4{
-      background: url(../img/a-bg4.jpg)  center center no-repeat;
-      background-size: cover;
-    }
-    .item5{
-      background: url(../img/a-bg5.jpg)  center center no-repeat;
-      background-size: cover;
-    }
-    .item6{
-      background: url(../img/a-bg6.jpg)  center center no-repeat;
-      background-size: cover;
-    }
-  
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+.accordion *{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+}
+.accordion {
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		display: table;
+		overflow: hidden;
+		
+}
+.accordion li{
+		display: table-cell;
+		width: 16.6666%;
+		transition: all .3s ease;
+		overflow: hidden;      
+		position: relative;
+		z-index: 5;
+}
+.accordion:hover li,
+.accordion:focus-within li {
+		width: 8%;
+}
+.accordion li:hover,
+.accordion li:focus,
+.accordion:focus-within li:focus{
+		width: 60%;
+}
+.accordion li:focus{
+		outline: none;
+}
+.accordion li a{
+		text-decoration: none;
+		display: block;
+		height: 100%;
+		padding: 20px;
+		overflow: hidden;
+		opacity: 0;
+		transition: all ease .3s;
+}
+.accordion li:hover a{
+		background-color: rgba(0, 0, 0, .3);
+		opacity: 1;
+		transition: all linear .3s;
+}
+.accordion li a h4{
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 30px;
+		position: absolute;
+		left: 10px;
+		bottom: 80px;
+}
+.accordion li a p{
+		font-size: 20px;
+		position: absolute;
+		left: 10px;
+		bottom: 20px;
+}
+.item1{
+		background: url(../img/a-bg1.jpg)  center center no-repeat;
+		background-size: cover;
+}
+.item2{
+		background: url(../img/a-bg2.jpg)  center center no-repeat;
+		background-size: cover;
+}
+.item3{
+		background: url(../img/a-bg3.jpg)  center center no-repeat;
+		background-size: cover;
+}
+.item4{
+		background: url(../img/a-bg4.jpg)  center center no-repeat;
+		background-size: cover;
+}
+.item5{
+		background: url(../img/a-bg5.jpg)  center center no-repeat;
+		background-size: cover;
+}
+.item6{
+		background: url(../img/a-bg6.jpg)  center center no-repeat;
+		background-size: cover;
+}
